@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>logo.png">
+    <title>Peek</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+    <style>
+        html {
+            overflow-y: hidden !important;
+        }
+
+        #app {
+            min-width: 100vh;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .lds-dual-ring {
+            margin: auto;
+            width: 256px;
+            height: 256px;
+        }
+
+        .lds-dual-ring:after {
+            content: " ";
+            display: block;
+            width: 184px;
+            height: 184px;
+            margin: 4px;
+            border-radius: 50%;
+            border: 20px solid #3F51B5;
+            border-color: #3F51B5 transparent #3F51B5 transparent;
+            animation: lds-dual-ring 1.2s linear infinite;
+        }
+
+        @keyframes lds-dual-ring {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+      <div class="lds-dual-ring"></div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
